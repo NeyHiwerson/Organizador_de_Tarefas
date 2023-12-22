@@ -1,6 +1,6 @@
 # Organizador_de_Tarefas
-FrontEnd para gerir tarefas consumindo uma API - trabalho JS Entra21
-URLBaseAPI: https://gabrielcaixeta.github.io/laravel-sanctum-auth-api
+- FrontEnd para gerir tarefas consumindo uma API - trabalho JS Entra21.
+- URLBaseAPI: https://gabrielcaixeta.github.io/laravel-sanctum-auth-api
 
 ## Termo de Aberturado Projeto
 - Justificativa: Devido a grande quantidade de tarefas com diferentes prasos joao acaba as veses por esquecer datas e dedicando-se a tarefas que poderiam ser feitas em outro momento e deixando focar nas que realmentre precisavam ser feitas naquele momento. Isso atrapalha o reu rendimento e resultados positivos.
@@ -73,12 +73,11 @@ URLBaseAPI: https://gabrielcaixeta.github.io/laravel-sanctum-auth-api
 - Relacionamentos:
   - Um Usuário pode ter várias Tarefas (Relacionamento 1:N entre Usuário e Tarefa).
 
-- Diagrama de Entidade e Relacionamento (DER):
-## Diagrama de Entidade e Relacionamento (DER):
+- Diagrama:
 
 ```lua
 +----------------------+          +----------------------+
-|        Usuário       |          |       Tarefa         |
+|        Usuário       | ( 1 - N) |       Tarefa         |
 +----------------------+          +----------------------+
 | ID (PK)              |          | ID (PK)              |
 | Name                 |          | Name                 |
@@ -86,5 +85,5 @@ URLBaseAPI: https://gabrielcaixeta.github.io/laravel-sanctum-auth-api
 | Senha                |          | Created_at           |
 |                      |          | Updated_at           |
 +----------------------+          +----------------------+
-```
 PK: Primary Key (Chave Primária)
+```
