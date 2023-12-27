@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" defer >
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer ></script>
+  <script src="../plugin/jquery-3.7.1.min.js" defer ></script>
+  <script src="../script/cadastro.js" defer ></script>
   <title>Cadastre-se</title>
 </head>
 <body>
@@ -15,27 +17,27 @@
 
     <form>
       <div class="my-3">
-        <label for="inputName" class="form-label">Nome</label>
-        <input type="name" class="form-control" id="inputName">
+        <label for="inputCadastroName" class="form-label">Nome</label>
+        <input type="name" class="form-control" id="inputCadastroName">
       </div>
       <div class="mb-3">
-        <label for="inputEmail" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+        <label for="inputCadastroEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputCadastroEmail" aria-describedby="emailHelp">
         <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="inputCadastroSenha" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="inputCadastroSenha">
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Confirme sua senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="inputConfirmeSenha" class="form-label">Confirme sua senha</label>
+        <input type="password" class="form-control" id="inputConfirmeSenha">
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="checkLicenseTerms">
         <label class="form-check-label" for="checkLicenseTerms">Estou de Acordo com os termos de licença.</label>
       </div>
-      <button type="submit" class="btn btn-primary">Cadastrar-se</button>
+      <button type="button" id="btn_cadastrar" class="btn btn-primary">Cadastrar-se</button>
     </form>
     <br>
     <a href="../../index.html">Já é cadastrado? Entre aqui.</a>
